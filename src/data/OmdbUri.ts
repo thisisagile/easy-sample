@@ -14,5 +14,5 @@ export class OmdbUri extends Uri {
 
   key = (key: string): this => this.set(OmdbUri.key, key);
   id = (id: unknown): this => this.set(OmdbUri.id, id);
-  query = (q: string): this => this.set(OmdbUri.query, q);
+  query = (q: unknown): this => this.set(OmdbUri.query, q);
 }

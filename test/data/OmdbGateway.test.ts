@@ -24,4 +24,10 @@ describe('OmdbGateway', () => {
     expect(api.get).toHaveBeenCalled();
     expect(movies[0]).toMatchObject(fits.with(items[0]));
   });
+
+  test('byId triggers get', async () => {
+    const movies = await omdb.byId('Brian');
+    expect(api.get).toHaveBeenCalled();
+    expect(movies[0]).toMatchObject(fits.with(items[0]));
+  });
 });

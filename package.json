@@ -33,12 +33,13 @@
   },
   "devDependencies": {
     "@thisisagile/easy-test": "^1.2.8",
+    "@types/uuid": "^8.3.0",
     "prettier": "^2.2.1",
     "semantic-release": "^17.3.0",
     "typescript": "4.1.2"
   },
   "dependencies": {
-    "@thisisagile/easy": "^1.9.1"
+    "@thisisagile/easy": "^1.11.0"
   },
   "engines": {
     "node": ">=12.13.0",

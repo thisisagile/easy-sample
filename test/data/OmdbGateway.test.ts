@@ -1,6 +1,5 @@
 import { OmdbUri } from '../../src/data/OmdbUri';
 import { OmdbGateway } from '../../src/data/OmdbGateway';
-import '@thisisagile/easy-test';
 import { fits, mock } from '@thisisagile/easy-test';
 import { Api, list } from '@thisisagile/easy';
 

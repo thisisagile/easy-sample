@@ -2,11 +2,11 @@ import { OmdbUri } from '../../src/data/OmdbUri';
 import { OmdbGateway } from '../../src/data/OmdbGateway';
 import '@thisisagile/easy-test';
 import { fits, mock } from '@thisisagile/easy-test';
-import { Api } from '@thisisagile/easy';
+import { Api, list } from '@thisisagile/easy';
 
 describe('OmdbGateway', () => {
 
-  const items = [{ title: 'Life of Brian' }];
+  const items = list({ title: 'Life of Brian' });
   const api = { get: mock.resolve({ data: { items } }) } as unknown as Api;
   let omdb: OmdbGateway;
 
@@ -26,8 +26,8 @@ describe('OmdbGateway', () => {
   });
 
   test('byId triggers get', async () => {
-    const movies = await omdb.byId('Brian');
+    const movie = await omdb.byId('Brian');
     expect(api.get).toHaveBeenCalled();
-    expect(movies[0]).toMatchObject(fits.with(items[0]));
+    expect(movie).toMatchObject(fits.with(items[0]));
   });
 });

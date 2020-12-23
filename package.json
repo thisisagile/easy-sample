@@ -35,7 +35,7 @@
     "access": "public"
   },
   "devDependencies": {
-    "@thisisagile/easy": "^1.15.1",
+    "@thisisagile/easy": "^1.16.1",
     "@thisisagile/easy-test": "^1.5.2",
     "@types/uuid": "^8.3.0",
     "dotenv": "^8.2.0",

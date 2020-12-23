@@ -1,5 +1,4 @@
-import { Constructor, list, List } from '@thisisagile/easy';
-import { ExpressProvider } from '../../dist/services/ExpressProvider';
+import { Constructor, ExpressProvider, list, List } from '@thisisagile/easy';
 
 export class Service {
   constructor(readonly name: string, private app = new ExpressProvider(), private resources: List<Constructor> = list()) {}

@@ -1,13 +1,11 @@
 import { SelectMovie } from '../../src/process/SelectMovie';
-import { mock } from '@thisisagile/easy-test';
-import { EasyRequest } from '@thisisagile/easy';
+import { mock, req } from '@thisisagile/easy-test';
 import { MovieResource } from '../../src/services/MovieResource';
 
 describe('MovieResource', () => {
 
   const select = new SelectMovie();
   let resource: MovieResource;
-  let req = { id: 42 } as unknown as EasyRequest;
 
   beforeEach(() => {
     resource = new MovieResource(select);
@@ -15,7 +13,7 @@ describe('MovieResource', () => {
 
   test('byId works', async () => {
     select.byId = mock.resolve();
-    await resource.byId(req);
+    await resource.byId(req.id(42));
     expect(select.byId).toHaveBeenCalledWith(42);
   });
 });

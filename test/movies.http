@@ -1,0 +1,11 @@
+GET http://localhost:9001/movie/movies?q=Brian
+Accept: application/json
+###
+
+GET http://localhost:9001/movie/movies?q=Tenenbaums
+Accept: application/json
+###
+
+GET http://localhost:9001/movie/movies/tt0265666
+Accept: application/json
+###

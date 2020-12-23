@@ -1,4 +1,3 @@
-import { OmdbUri } from '../../src/data/OmdbUri';
 import { OmdbGateway } from '../../src/data/OmdbGateway';
 import { fits, mock } from '@thisisagile/easy-test';
 import { Api, list } from '@thisisagile/easy';
@@ -11,11 +10,6 @@ describe('OmdbGateway', () => {
 
   beforeEach(() => {
     omdb = new OmdbGateway(api);
-  });
-
-  test('Routes are correct', () => {
-    expect(omdb.route).toMatchRoute(OmdbUri.Movies);
-    expect(omdb.routeId).toMatchRoute(OmdbUri.Movie);
   });
 
   test('Search triggers get', async () => {

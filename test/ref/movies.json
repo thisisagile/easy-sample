@@ -1,16 +1,14 @@
 [
   {
-    "Title": "Monty Python's Life of Brian",
-    "Year": "1979",
-    "imdbID": "tt0079470",
-    "Type": "movie",
-    "Poster": "https://m.media-amazon.com/images/M/MV5BMzAwNjU1OTktYjY3Mi00NDY5LWFlZWUtZjhjNGE0OTkwZDkwXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg"
+    "title": "Monty Python's Life of Brian",
+    "year": "1979",
+    "id": "tt0079470",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMzAwNjU1OTktYjY3Mi00NDY5LWFlZWUtZjhjNGE0OTkwZDkwXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg"
   },
   {
-    "Title": "Brian Banks",
-    "Year": "2018",
-    "imdbID": "tt3920820",
-    "Type": "movie",
-    "Poster": "https://m.media-amazon.com/images/M/MV5BOGI4NGRlNjEtZDUwOC00ZmRkLWI1ZTgtOGZmMTk3MzQ0ODVhXkEyXkFqcGdeQXVyNDExMzMxNjE@._V1_SX300.jpg"
+    "title": "Brian Banks",
+    "year": "2018",
+    "id": "tt3920820",
+    "poster": "https://m.media-amazon.com/images/M/MV5BOGI4NGRlNjEtZDUwOC00ZmRkLWI1ZTgtOGZmMTk3MzQ0ODVhXkEyXkFqcGdeQXVyNDExMzMxNjE@._V1_SX300.jpg"
   }
 ]

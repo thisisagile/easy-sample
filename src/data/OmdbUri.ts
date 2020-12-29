@@ -1,6 +1,6 @@
-import { Uri, uri } from '@thisisagile/easy';
+import { EasyUri, uri } from '@thisisagile/easy';
 
-export class OmdbUri extends Uri {
+export class OmdbUri extends EasyUri {
 
   static readonly key = uri.query('apikey');
   static readonly id = uri.query('i');

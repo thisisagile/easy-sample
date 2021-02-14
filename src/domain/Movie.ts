@@ -6,5 +6,5 @@ export class Movie extends Entity {
   @required() readonly year: number = this.state.Year;
   readonly poster: string = this.state.Poster;
 
-  update = (add?: Json): Movie => new Movie(this.toJSON(add));
+  update = (add?: Json): Movie => new Movie(this.merge(add));
 }

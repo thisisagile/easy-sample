@@ -1,6 +1,6 @@
 import { SelectMovie } from '../../src/process/SelectMovie';
 import { MoviesResource } from '../../src/services/MoviesResource';
-import { mock, req } from '@thisisagile/easy-test';
+import { mock } from '@thisisagile/easy-test';
 
 describe('MoviesResource', () => {
 
@@ -13,7 +13,7 @@ describe('MoviesResource', () => {
 
   test('search works', async () => {
     select.search = mock.resolve();
-    await resource.search(req.q(42));
+    await resource.search(mock.req.q(42));
     expect(select.search).toHaveBeenCalledWith(42);
   });
 });

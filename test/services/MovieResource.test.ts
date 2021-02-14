@@ -1,5 +1,5 @@
 import { SelectMovie } from '../../src/process/SelectMovie';
-import { mock, req } from '@thisisagile/easy-test';
+import { mock } from '@thisisagile/easy-test';
 import { MovieResource } from '../../src/services/MovieResource';
 
 describe('MovieResource', () => {
@@ -13,7 +13,7 @@ describe('MovieResource', () => {
 
   test('byId works', async () => {
     select.byId = mock.resolve();
-    await resource.byId(req.id(42));
+    await resource.byId(mock.req.id(42));
     expect(select.byId).toHaveBeenCalledWith(42);
   });
 });

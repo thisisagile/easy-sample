@@ -6,8 +6,8 @@ export class OmdbUri extends EasyUri {
   static readonly id = uri.query('i');
   static readonly query = uri.query('s');
 
-  static readonly Movies = new OmdbUri([OmdbUri.key, OmdbUri.query]);
-  static readonly Movie = new OmdbUri([OmdbUri.key, OmdbUri.id]);
+  static readonly Movies = new OmdbUri();
+  static readonly Movie = new OmdbUri();
 
   readonly host = uri.host('https://www.omdbapi.com');
   readonly resource = uri.segment();

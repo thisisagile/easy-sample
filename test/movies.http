@@ -10,6 +10,10 @@ GET http://localhost:9001/movie/movies/tt0265666
 Accept: application/json
 ###
 
+GET http://localhost:9001/movie/movies/tt0265666-1111
+Accept: application/json
+###
+
 GET http://localhost:9001/movie/health
 Accept: application/json
 ###

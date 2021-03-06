@@ -1,8 +1,8 @@
-import { error, Handler, HealthResource, notFound, Service } from '@thisisagile/easy';
+import { error, ExpressProvider, Handler, HealthResource, notFound, Service } from '@thisisagile/easy';
 
 export class SampleService extends Service {
 
-  static readonly Movie = new SampleService('movie');
+  static readonly Movie = new SampleService('movie', new ExpressProvider());
 
   post = (): Handler[] => [notFound, error];
 

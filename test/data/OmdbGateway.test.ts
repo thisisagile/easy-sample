@@ -5,7 +5,7 @@ import { Api, list } from '@thisisagile/easy';
 describe('OmdbGateway', () => {
 
   const items = list({ title: 'Life of Brian' });
-  const api = { get: mock.resolve({ data: { items } }) } as unknown as Api;
+  const api = { get: mock.resolve({ body: { data: { items } }}) } as unknown as Api;
   let omdb: OmdbGateway;
 
   beforeEach(() => {

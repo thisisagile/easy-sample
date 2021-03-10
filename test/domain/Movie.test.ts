@@ -1,10 +1,9 @@
 import { Movie } from '../../src/domain/Movie';
-import "@thisisagile/easy-test";
-import movies from "../ref/movies.json";
-import omdb from "../ref/omdb.json";
+import '@thisisagile/easy-test';
+import movies from '../ref/movies.json';
+import omdb from '../ref/omdb.json';
 
 describe('Movie', () => {
-
   test('Movie maps correctly', () => {
     const m = new Movie(omdb[0]);
     expect(m.id).toBe(omdb[0].imdbID);
@@ -13,19 +12,19 @@ describe('Movie', () => {
     expect(m.poster).toBe(omdb[0].Poster);
   });
 
-  test("Movie is valid", () => {
+  test('Movie is valid', () => {
     const m = new Movie(omdb[0]);
     expect(m).toBeValid();
   });
 
-  test("Movie is invalid", () => {
-    const m = new Movie({ Title: "Man on the Moon" });
+  test('Movie is invalid', () => {
+    const m = new Movie({ Title: 'Man on the Moon' });
     expect(m).not.toBeValid();
   });
 
-  test("Movie from data is correct", () => {
+  test('Movie from data is correct', () => {
     const m = new Movie(omdb[0]);
-    expect(m.id).toBe("tt0079470");
+    expect(m.id).toBe('tt0079470');
     expect(m.toJSON()).toEqual(movies[0]);
-  })
+  });
 });

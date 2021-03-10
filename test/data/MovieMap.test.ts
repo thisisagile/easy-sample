@@ -3,7 +3,6 @@ import omdb from '../ref/omdb.json';
 import movies from '../ref/movies.json';
 
 describe('MovieMap', () => {
-
   const map = new MovieMap();
 
   test('It works', () => {

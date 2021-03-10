@@ -1,7 +1,6 @@
 import { EasyUri, uri } from '@thisisagile/easy';
 
 export class OmdbUri extends EasyUri {
-
   static readonly key = uri.query('apikey');
   static readonly id = uri.query('i');
   static readonly query = uri.query('s');

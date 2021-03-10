@@ -6,8 +6,7 @@ import { ManageMovie } from '../process/ManageMovie';
 
 @route(MovieUri.Movies)
 export class MoviesResource {
-  constructor(readonly select = new SelectMovie(), readonly manage = new ManageMovie()) {
-  }
+  constructor(readonly select = new SelectMovie(), readonly manage = new ManageMovie()) {}
 
   @get()
   search = (req: Req): Promise<List<Movie>> => this.select.search(req.q);

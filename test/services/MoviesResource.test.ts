@@ -3,7 +3,6 @@ import { MoviesResource } from '../../src/services/MoviesResource';
 import { mock } from '@thisisagile/easy-test';
 
 describe('MoviesResource', () => {
-
   const select = new SelectMovie();
   let resource: MoviesResource;
 

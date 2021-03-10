@@ -3,5 +3,7 @@ import { Manage } from '@thisisagile/easy';
 import { MovieRepo } from '../domain/MovieRepo';
 
 export class ManageMovie extends Manage<Movie> {
-  constructor(readonly movies = new MovieRepo()) {super(movies); }
+  constructor(readonly movies = new MovieRepo()) {
+    super(movies);
+  }
 }

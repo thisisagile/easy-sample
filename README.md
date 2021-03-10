@@ -1,7 +1,8 @@
 # easy-sample
-[![Easy pipeline](https://github.com/thisisagile/easy-sample/workflows/Easy%20pipeline/badge.svg?branch=main)](https://github.com/thisisagile/easy/actions?query=workflow%3A%22Easy+pipeline%22)
-[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=thisisagile_easy-sample&metric=alert_status)](https://sonarcloud.io/dashboard?id=thisisagile_easy-sample)
+[![pipeline](https://github.com/thisisagile/easy-sample/workflows/pipeline/badge.svg?branch=main)](https://github.com/thisisagile/easy/actions?query=workflow%3A%22pipeline%22)
 [![npm package](https://img.shields.io/npm/v/@thisisagile/easy-sample.svg)](https://www.npmjs.com/package/@thisisagile/easy-sample)
+[![quality gate](https://sonarcloud.io/api/project_badges/measure?project=thisisagile_easy-sample&metric=alert_status)](https://sonarcloud.io/dashboard?id=thisisagile_easy-sample)
+[![coverage](https://sonarcloud.io/api/project_badges/measure?project=thisisagile_easy-sample&metric=coverage)](https://sonarcloud.io/dashboard?id=thisisagile_easy-sample)
 [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
 
 Repository with a set of examples of how to apply @thisisagile/easy for building simple, straightforward domain-driven microservices in TypeScript, running on express.js and node.js (for example).

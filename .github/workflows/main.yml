@@ -2,7 +2,7 @@ name: pipeline
 on: [push, pull_request]
 
 jobs:
-  build-test-and-release:
+  build-and-test:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout

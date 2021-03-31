@@ -1,7 +1,11 @@
-import { Exception, Id, Json, List, RequestOptions, RouteGateway, when } from '@thisisagile/easy';
+import { Api, Exception, Id, Json, List, RequestOptions, RouteGateway, when } from '@thisisagile/easy';
 import { OmdbUri } from './OmdbUri';
 
 export class OmdbGateway extends RouteGateway {
+  constructor(readonly api = new Api()) {
+    super(OmdbUri.Movies, OmdbUri.Movie, api);
+  }
+
   search = (q: unknown): Promise<List<Json>> =>
     this.api.get(OmdbUri.Movies.key('ea375677').query(q), RequestOptions.Json, r => r.Search).then(r => r.body.data.items);
 

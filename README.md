@@ -1,5 +1,5 @@
 # easy-sample
-[![pipeline](https://github.com/thisisagile/easy-sample/workflows/pipeline/badge.svg?branch=main)](https://github.com/thisisagile/easy/actions?query=workflow%3A%22pipeline%22)
+[![pipeline](https://github.com/thisisagile/easy-sample/workflows/pipeline/badge.svg?branch=main)](https://github.com/thisisagile/easy-sample/actions?query=workflow%3A%22pipeline%22)
 [![npm package](https://img.shields.io/npm/v/@thisisagile/easy-sample.svg)](https://www.npmjs.com/package/@thisisagile/easy-sample)
 [![quality gate](https://sonarcloud.io/api/project_badges/measure?project=thisisagile_easy-sample&metric=alert_status)](https://sonarcloud.io/dashboard?id=thisisagile_easy-sample)
 [![coverage](https://sonarcloud.io/api/project_badges/measure?project=thisisagile_easy-sample&metric=coverage)](https://sonarcloud.io/dashboard?id=thisisagile_easy-sample)

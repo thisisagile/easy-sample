@@ -3,7 +3,11 @@ import { OmdbUri } from './OmdbUri';
 
 export class OmdbGateway extends RouteGateway {
   constructor(readonly api = new Api()) {
-    super(OmdbUri.Movies, OmdbUri.Movie, api);
+    super(
+      () => OmdbUri.Movies,
+      () => OmdbUri.Movie,
+      api
+    );
   }
 
   search = (q: unknown): Promise<List<Json>> =>

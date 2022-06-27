@@ -1,8 +1,8 @@
-import { Map } from '@thisisagile/easy';
+import { Mapper } from '@thisisagile/easy';
 
-export class MovieMap extends Map {
-  readonly id = this.prop('imdbID');
-  readonly title = this.prop('Title');
-  readonly year = this.prop('Year');
-  readonly poster = this.prop('Poster');
+export class MovieMap extends Mapper {
+  readonly id = this.map.item('imdbID');
+  readonly title = this.map.item('Title');
+  readonly year = this.map.item('Year');
+  readonly poster = this.map.item('Poster');
 }

@@ -2,6 +2,7 @@ import { Movie } from '../../src/domain/Movie';
 import '@thisisagile/easy-test';
 import movies from '../ref/movies.json';
 import omdb from '../ref/omdb.json';
+import { fits } from '@thisisagile/easy-test';
 
 describe('Movie', () => {
   test('Movie maps correctly', () => {
@@ -25,6 +26,6 @@ describe('Movie', () => {
   test('Movie from data is correct', () => {
     const m = new Movie(omdb[0]);
     expect(m.id).toBe('tt0079470');
-    expect(m.toJSON()).toEqual(movies[0]);
+    expect(m.toJSON()).toEqual(fits.json(movies[0]));
   });
 });
